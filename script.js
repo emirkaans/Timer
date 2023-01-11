@@ -2,7 +2,7 @@
 
 const timer = document.querySelector(".timer");
 
-const time = setInterval(function () {
+setInterval(function () {
   const now = new Date();
   const options = {
     hour: "numeric",
@@ -19,4 +19,3 @@ const time = setInterval(function () {
   timer.innerHTML = local;
 }, 1000);
 
-time();
